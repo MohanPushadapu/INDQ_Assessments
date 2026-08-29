@@ -2,6 +2,12 @@
 
 Embedded ECG processing pipeline for real-time R-peak detection, BPM estimation, and signal-quality assessment.
 
+The start and end time were taken as 0.0 and 5.0 for easier visibility of the PQRST pattern which we can observe in the plots. 
+The first second(500 samples) of the readings are used for calibration of the threshold and the signal and noise levels. 
+
+> **Disclaimer:** This project was developed solely for technical assessment purposes. It is not intended for clinical use, medical diagnosis, or patient monitoring.
+
+
 ## System Architecture
 
 ```text
@@ -54,3 +60,14 @@ Example:
 ```
 
 ## Plots
+
+### Raw ECG
+![Raw ECG](plot_1_raw_ecg.png)
+
+### Filtered ECG
+
+![Filtered ECG](plot_2_filtered_ecg.png)
+
+## R-Peak Detection
+
+![R-Peak Detection](plot_3_rpeak_detection.png)
